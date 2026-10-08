@@ -1,54 +1,54 @@
-# Cifrari di Cesare e Vigenère
+# Caesar and Vigenère Ciphers
 
-Un laboratorio interattivo di crittografia classica scritto in **Wolfram Mathematica**. Unisce la teoria, strumenti visuali per sperimentare ed esercizi con correzione automatica, per imparare come funzionano e come si attaccano due dei cifrari più antichi della storia.
+An interactive lab on classical cryptography, written in **Wolfram Mathematica**. It combines theory, visual tools to experiment with, and auto-graded exercises, to learn how two of the oldest ciphers in history work and how they can be broken.
 
-> Progetto del corso di **Matematica Computazionale**, Laurea Magistrale in Informatica, Università di Bologna (a.a. 2025/2026).
-> Valutazione finale: **30 e lode**.
+> Project for the **Computational Mathematics** course, MSc in Computer Science, University of Bologna (academic year 2025/2026).
+> Final grade: **30 cum laude**.
 
-## Cosa contiene
+## What's inside
 
-**Il tutorial** (`Laboratorio_Crittografia_Arcaica.nb`) è diviso in capitoli:
+**The tutorial** (`Laboratorio_Crittografia_Arcaica.nb`) is split into chapters:
 
-1. Introduzione alla crittografia
-2. Il Cifrario di Cesare
-3. Il Cifrario di Vigenère
-4. Approfondimenti
-5. Bibliografia
-6. Commenti e lavoro futuro
+1. Introduction to cryptography
+2. The Caesar cipher
+3. The Vigenère cipher
+4. Further topics
+5. Bibliography
+6. Comments and future work
 
-**Il pacchetto** (`CrittografiaArcaica.m`) implementa:
+**The package** (`CrittografiaArcaica.m`) implements:
 
-- **Cifratura e decifratura** con Cesare (shift fisso) e Vigenère (chiave ripetuta)
-- **Ruota di Cesare interattiva** per vedere lo spostamento lettera per lettera
-- **Tabella degli shift di Vigenère**, che mostra come ogni lettera della chiave trasforma il testo
-- **Analisi delle frequenze** con grafico, alla base della crittoanalisi di Cesare
-- **Esercizi generati automaticamente** a partire da parole italiane del dizionario di Mathematica, riproducibili tramite seed e con verifica immediata della risposta
+- **Encryption and decryption** with Caesar (fixed shift) and Vigenère (repeated key)
+- **Interactive Caesar wheel** to see the shift letter by letter
+- **Vigenère shift table**, showing how each key letter transforms the text
+- **Frequency analysis** with a chart, the basis of Caesar cryptanalysis
+- **Automatically generated exercises** based on Italian words from Mathematica's dictionary, reproducible through a seed and with instant answer checking
 
-## Struttura della repository
+## Repository structure
 
-| File | Descrizione |
+| File | Description |
 | --- | --- |
-| `Laboratorio_Crittografia_Arcaica.nb` | Notebook con teoria, esempi interattivi ed esercizi |
-| `CrittografiaArcaica.m` | Pacchetto con i cifrari, le interfacce grafiche e il generatore di esercizi |
+| `Laboratorio_Crittografia_Arcaica.nb` | Notebook with theory, interactive examples and exercises |
+| `CrittografiaArcaica.m` | Package with the ciphers, the graphical interfaces and the exercise generator |
 
-## Come usarlo
+## How to use it
 
-**Requisiti:** Mathematica 14 o superiore e una connessione a Internet, necessaria la prima volta per scaricare il dizionario italiano usato da `DictionaryLookup`.
+**Requirements:** Mathematica 14 or later and an internet connection, needed the first time to download the Italian dictionary used by `DictionaryLookup`.
 
-1. Clona o scarica la repository:
-   ```bash
+1. Clone or download the repository:
+```bash
    git clone https://github.com/MatteMito/MC-Project.git
-   ```
-2. Apri `Laboratorio_Crittografia_Arcaica.nb`, tenendo `CrittografiaArcaica.m` nella stessa cartella.
-3. Valuta il notebook dall'inizio: *Valutazione → Valuta notebook*.
-4. Nelle sezioni II.3 e III.3 usa i bottoni per aprire gli esercizi.
+```
+2. Open `Laboratorio_Crittografia_Arcaica.nb`, keeping `CrittografiaArcaica.m` in the same folder.
+3. Evaluate the notebook from the top: *Evaluation → Evaluate Notebook*.
+4. In sections II.3 and III.3, use the buttons to open the exercises.
 
-## Limitazioni
+## Limitations
 
-- Si usano solo le lettere `A–Z`: i caratteri accentati non sono supportati.
-- Per generare gli esercizi serve il dizionario italiano di Mathematica.
+- Only the letters `A–Z` are used: accented characters are not supported.
+- Generating exercises requires Mathematica's Italian dictionary.
 
-## Autori: gruppo "I Cesaroni"
+## Authors: team "I Cesaroni"
 
 - Matteo Boscherini
 - Alessandro Campedelli
